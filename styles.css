@@ -12,6 +12,12 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -100,7 +106,7 @@
 }
 
 .information .title {
-  font-weight: 2rem;
+  font-weight: bolder;
   text-align: center;
   padding-bottom: 48px;
 }
@@ -127,4 +133,32 @@
   height: 128px;
   border: 4px solid #9ABFFA;
   border-radius: 10px;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 212px;
+  background-color: #e5e7eb;
+}
+
+.feedback .message {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback .text {
+  font-weight: 300;
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  max-width: 800px;
+}
+
+.feedback .name {
+  font-weight: bold;
+  font-size: 24px;
+  align-self: flex-end;
 }
