@@ -15,7 +15,7 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
 }
 
 .header {
@@ -79,6 +79,13 @@ body {
   font-weight: 900;
   font-size: 16px;
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-sign:hover {
+  color: #3882f6;;
+  background-color: white;
+  border-color: #3882f6;
 }
 
 .hero .img {
@@ -98,6 +105,7 @@ body {
 }
 
 .information {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,6 +144,7 @@ body {
 }
 
 .feedback {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,6 +156,7 @@ body {
 .feedback .message {
   display: flex;
   flex-direction: column;
+  gap: .3125rem;
 }
 
 .feedback .text {
@@ -164,6 +174,9 @@ body {
 }
 
 .contract-service {
+  flex: 1;
+  display: flex;
+  align-items: center;
   padding: 96px 192px;
 }
 
@@ -175,6 +188,7 @@ body {
   border-radius: 10px;
   background-color: #3B82F6;
   max-width: 800px;
+  gap: 2rem;
 }
 
 .contract-service .title,
@@ -190,6 +204,13 @@ body {
   font-weight: 900;
   font-size: 16px;
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contract-service .btn-sign:hover {
+  color: #3882f6;;
+  background-color: white;
+  border-color: #3882f6;
 }
 
 .footer {
